@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Morgana-Rides(TitleScreen).wav-26cf45d5380b25c7f1983d0725a100b8.sample"
+
+[deps]
+
+source_file="res://Music/Morgana-Rides(TitleScreen).wav"
+source_md5="7fb6a97ef11834091507ae814d3cc9a6"
+
+dest_files=[ "res://.import/Morgana-Rides(TitleScreen).wav-26cf45d5380b25c7f1983d0725a100b8.sample" ]
+dest_md5="be2a8cc19e95e90a6c303a0e9b2921c4"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

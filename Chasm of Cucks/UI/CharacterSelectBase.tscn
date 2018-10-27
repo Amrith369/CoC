@@ -1,0 +1,373 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/CharacterSelectBase.gd" type="Script" id=1]
+[ext_resource path="res://UI/CharacterSelectionFrame.png" type="Texture" id=2]
+[ext_resource path="res://UI/CharacterSelectionFrameFocus.png" type="Texture" id=3]
+[ext_resource path="res://Characters/Amrith/CI.png" type="Texture" id=4]
+[ext_resource path="res://Characters/ArmoredSkeptic/SkepticIcon.jpg" type="Texture" id=5]
+[ext_resource path="res://Characters/ChrisRayGun/ChrisRayGunIcon.jpg" type="Texture" id=6]
+[ext_resource path="res://Characters/CoolHardLogic/CHLIcon.jpg" type="Texture" id=7]
+[ext_resource path="res://Characters/Logicked/LogickedIcon.jpg" type="Texture" id=8]
+[ext_resource path="res://Characters/Martymer/MartymerIcon.jpg" type="Texture" id=9]
+[ext_resource path="res://Characters/Sargon/SargonIcon.jpg" type="Texture" id=10]
+[ext_resource path="res://Characters/ShoeOnHead/ShoeOnHeadIcon.jpg" type="Texture" id=11]
+
+[node name="PlayerSelectRows" type="Control"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 150.0
+margin_top = 150.0
+margin_right = -150.0
+margin_bottom = -150.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Margin" ]
+
+[node name="RowOrganizer" type="VBoxContainer" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_scale = Vector2( 0.2, 0.2 )
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 40
+alignment = 2
+_sections_unfolded = [ "Rect", "custom_constants" ]
+
+[node name="ColumnOrganizer" type="HBoxContainer" parent="RowOrganizer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 3560.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 40
+alignment = 0
+_sections_unfolded = [ "Rect", "custom_constants" ]
+
+[node name="Select1" type="TextureButton" parent="RowOrganizer/ColumnOrganizer" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 860.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+hint_tooltip = "Amrith"
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Hint", "Margin", "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer/Select1" index="0"]
+
+show_behind_parent = true
+position = Vector2( 430, 430 )
+scale = Vector2( 0.58, 0.58 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Select2" type="TextureButton" parent="RowOrganizer/ColumnOrganizer" index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 900.0
+margin_right = 1760.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer/Select2" index="0"]
+
+show_behind_parent = true
+position = Vector2( 430, 430 )
+scale = Vector2( 3.5, 3.5 )
+texture = ExtResource( 5 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Select3" type="TextureButton" parent="RowOrganizer/ColumnOrganizer" index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1800.0
+margin_right = 2660.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer/Select3" index="0"]
+
+show_behind_parent = true
+position = Vector2( 435, 430 )
+scale = Vector2( 1.75, 1.75 )
+texture = ExtResource( 6 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Select4" type="TextureButton" parent="RowOrganizer/ColumnOrganizer" index="3"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2700.0
+margin_right = 3560.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer/Select4" index="0"]
+
+show_behind_parent = true
+position = Vector2( 430, 430 )
+scale = Vector2( 0.93, 0.93 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="ColumnOrganizer2" type="HBoxContainer" parent="RowOrganizer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 900.0
+margin_right = 3560.0
+margin_bottom = 1760.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 40
+alignment = 0
+_sections_unfolded = [ "Rect", "custom_constants" ]
+
+[node name="Select5" type="TextureButton" parent="RowOrganizer/ColumnOrganizer2" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 860.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer2/Select5" index="0"]
+
+show_behind_parent = true
+position = Vector2( 430, 430 )
+scale = Vector2( 2.1, 2.1 )
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Select6" type="TextureButton" parent="RowOrganizer/ColumnOrganizer2" index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 900.0
+margin_right = 1760.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer2/Select6" index="0"]
+
+show_behind_parent = true
+position = Vector2( 430, 430 )
+scale = Vector2( 3.5, 3.5 )
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Select7" type="TextureButton" parent="RowOrganizer/ColumnOrganizer2" index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1800.0
+margin_right = 2660.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer2/Select7" index="0"]
+
+show_behind_parent = true
+position = Vector2( 430, 430 )
+scale = Vector2( 0.92, 0.92 )
+texture = ExtResource( 10 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Select8" type="TextureButton" parent="RowOrganizer/ColumnOrganizer2" index="3"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 2700.0
+margin_right = 3560.0
+margin_bottom = 860.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 2 )
+texture_focused = ExtResource( 3 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Sprite" type="Sprite" parent="RowOrganizer/ColumnOrganizer2/Select8" index="0"]
+
+show_behind_parent = true
+position = Vector2( 430, 430 )
+scale = Vector2( 0.93, 0.93 )
+texture = ExtResource( 11 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer/Select1" to="." method="_on_Select1_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer/Select1" to="." method="_on_Select1_pressed"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer/Select2" to="." method="_on_Select2_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer/Select2" to="." method="_on_Select2_pressed"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer/Select3" to="." method="_on_Select3_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer/Select3" to="." method="_on_Select3_pressed"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer/Select4" to="." method="_on_Select4_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer/Select4" to="." method="_on_Select4_pressed"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select5" to="." method="_on_Select1_focus_entered"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select5" to="." method="_on_Select5_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer2/Select5" to="." method="_on_Select5_pressed"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select6" to="." method="_on_Select6_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer2/Select6" to="." method="_on_Select6_pressed"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select7" to="." method="_on_Select7_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer2/Select7" to="." method="_on_Select7_pressed"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select8" to="." method="_on_Select8_focus_entered"]
+
+[connection signal="pressed" from="RowOrganizer/ColumnOrganizer2/Select8" to="." method="_on_Select8_pressed"]
+
+

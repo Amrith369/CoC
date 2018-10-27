@@ -1,0 +1,318 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Scripts/title_screen.gd" type="Script" id=1]
+[ext_resource path="res://UI/TitleBackdrop.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/DWARVESC.TTF" type="DynamicFontData" id=3]
+[ext_resource path="res://Scripts/title_start.gd" type="Script" id=4]
+[ext_resource path="res://Fonts/OpenSans-Regular.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://UI/CrusadeModeButton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://UI/TriggerModeButton.tscn" type="PackedScene" id=7]
+[ext_resource path="res://UI/SettingsButton.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/QuitButton.tscn" type="PackedScene" id=9]
+[ext_resource path="res://UI/fade_in.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Particles/TitleEmbers.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Music/Morgana-Rides(TitleScreen).wav" type="AudioStream" id=12]
+[ext_resource path="res://Sounds/Click.wav" type="AudioStream" id=13]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 50
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 75
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="StyleBoxLine" id=3]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+color = Color( 0.753659, 0.124771, 0.863281, 1 )
+grow = 9.0
+thickness = 5
+vertical = false
+
+[sub_resource type="StyleBoxLine" id=4]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+color = Color( 0.556641, 0.113281, 1, 0 )
+grow = 4.0
+thickness = 3
+vertical = false
+_sections_unfolded = [ "Content Margin" ]
+
+[sub_resource type="DynamicFont" id=5]
+
+size = 25
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 5 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+
+[sub_resource type="StyleBoxLine" id=6]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+color = Color( 0.445492, 0.0637207, 0.90625, 1 )
+grow = 1.0
+thickness = 4
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=7]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+color = Color( 0.443137, 0.0627451, 0.905882, 1 )
+grow = 1.0
+thickness = 4
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=8]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+color = Color( 0.443137, 0.0627451, 0.905882, 1 )
+grow = 1.0
+thickness = 4
+vertical = true
+
+[sub_resource type="StyleBoxLine" id=9]
+
+content_margin_left = -1.0
+content_margin_right = -1.0
+content_margin_top = -1.0
+content_margin_bottom = -1.0
+color = Color( 0.443137, 0.0627451, 0.905882, 1 )
+grow = 1.0
+thickness = 4
+vertical = true
+
+[node name="Control" type="Control"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+position = Vector2( 640, 250 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Menu" type="VBoxContainer" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 60.0
+margin_top = 60.0
+margin_right = -60.0
+margin_bottom = -60.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 1
+_sections_unfolded = [ "Margin" ]
+
+[node name="Logo1" type="Label" parent="Menu" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 215.0
+margin_right = 1160.0
+margin_bottom = 263.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+text = "Last Logic:"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script = ExtResource( 4 )
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Logo2" type="Label" parent="Menu" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 267.0
+margin_right = 1160.0
+margin_bottom = 339.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "Chasm of Cucks"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Margin", "custom_fonts" ]
+
+[node name="Press" type="Button" parent="Menu" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 343.0
+margin_right = 1160.0
+margin_bottom = 384.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/hover = SubResource( 3 )
+custom_styles/focus = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Press Enter"
+flat = true
+align = 1
+_sections_unfolded = [ "Focus", "Grow Direction", "Material", "Mouse", "Size Flags", "Theme", "Visibility", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
+
+[node name="CenterRow" type="HBoxContainer" parent="Menu" index="3"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 173.0
+margin_right = 1160.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 3
+alignment = 1
+_sections_unfolded = [ "Margin", "Size Flags" ]
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1160.0
+margin_bottom = 427.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 20
+alignment = 1
+_sections_unfolded = [ "Size Flags", "custom_constants" ]
+
+[node name="CrusadeModeButton" parent="Menu/CenterRow/Buttons" index="0" instance=ExtResource( 6 )]
+
+margin_top = 33.0
+margin_right = 1160.0
+margin_bottom = 108.0
+custom_styles/focus = SubResource( 6 )
+scene_to_load = "res://UI/CrusadeSelection.tscn"
+
+[node name="TriggerModeButton" parent="Menu/CenterRow/Buttons" index="1" instance=ExtResource( 7 )]
+
+margin_top = 128.0
+margin_right = 1160.0
+margin_bottom = 203.0
+focus_mode = 0
+custom_styles/focus = SubResource( 7 )
+disabled = true
+scene_to_load = "res://UI/TriggeredSelection.tscn"
+
+[node name="SettingsButton" parent="Menu/CenterRow/Buttons" index="2" instance=ExtResource( 8 )]
+
+margin_top = 223.0
+margin_right = 1160.0
+margin_bottom = 298.0
+custom_styles/focus = SubResource( 8 )
+scene_to_load = "res://UI/SettingsMenu.tscn"
+
+[node name="QuitButton" parent="Menu/CenterRow/Buttons" index="3" instance=ExtResource( 9 )]
+
+margin_top = 318.0
+margin_right = 1160.0
+margin_bottom = 393.0
+custom_styles/focus = SubResource( 9 )
+scene_to_load = "res://Quit.tscn"
+
+[node name="FadeIn" parent="." index="2" instance=ExtResource( 10 )]
+
+visible = false
+
+[node name="Particles2D" parent="." index="3" instance=ExtResource( 11 )]
+
+position = Vector2( 630, 750 )
+
+[node name="TitleTheme" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 12 )
+volume_db = -0.06
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[node name="ButtonClick" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = ExtResource( 13 )
+volume_db = -0.2
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[connection signal="pressed" from="Menu/Press" to="." method="_on_Press_pressed"]
+
+[connection signal="pressed" from="Menu/CenterRow/Buttons/QuitButton" to="Menu/CenterRow/Buttons/QuitButton" method="_on_QuitButton_pressed"]
+
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
+
+
