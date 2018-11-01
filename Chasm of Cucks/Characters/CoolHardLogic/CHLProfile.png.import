@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SkepticProfile.png-16a78fcecf5329ea229cd420d57fb75d.stex"
+path="res://.import/CHLProfile.png-33ca6a56f0a46242f5b68fe9f0fb29e9.stex"
 
 [deps]
 
-source_file="res://Characters/ArmoredSkeptic/SkepticProfile.png"
-source_md5="663da36bd65c05a7bcd846716cea9cef"
+source_file="res://Characters/CoolHardLogic/CHLProfile.png"
+source_md5="6258f74cf922acb2975d78c4578c1013"
 
-dest_files=[ "res://.import/SkepticProfile.png-16a78fcecf5329ea229cd420d57fb75d.stex" ]
-dest_md5="ac280d1ec869f47e94c3d4589b07fcd2"
+dest_files=[ "res://.import/CHLProfile.png-33ca6a56f0a46242f5b68fe9f0fb29e9.stex" ]
+dest_md5="0c095c211831ceb499cdd0d83d76fc3b"
 
 [params]
 

@@ -17,22 +17,29 @@ func _process(delta):
 			$SelectSound.play()
 			$Profiles/Amrith.show()
 			$Profiles/Skeptic.hide()
+			$Profiles/Chris.hide()
+			$Profiles/CHL.hide()
 			
 		elif (selected == "armoredSkeptic"):
 			print("Armored Skeptic Selected.")
 			$Profiles/Skeptic.show()
 			$Profiles/Amrith.hide()
+			$Profiles/Chris.hide()
 			$SelectSound.play()
 			
 		elif (selected == "chrisRayGun"):
 			print("Chris Ray Gun Selected.")
-			$Profiles/Amrith.hide()
+			$Profiles/Chris.show()
+#			$Profiles/Amrith.hide()
 			$Profiles/Skeptic.hide()
+			$Profiles/CHL.hide()
 			$SelectSound.play()
 			
 		elif (selected == "chl"):
 			print("Cool Hard Logic Selected.")
+			$Profiles/CHL.show()
 			$Profiles/Amrith.hide()
+			$Profiles/Chris.hide()
 			$SelectSound.play()
 			
 		elif (selected == "logicked"):
