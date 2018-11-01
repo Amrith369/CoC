@@ -352,9 +352,9 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 
 [connection signal="pressed" from="RowOrganizer/ColumnOrganizer/Select4" to="." method="_on_Select4_pressed"]
 
-[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select5" to="." method="_on_Select1_focus_entered"]
-
 [connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select5" to="." method="_on_Select5_focus_entered"]
+
+[connection signal="focus_entered" from="RowOrganizer/ColumnOrganizer2/Select5" to="." method="_on_Select1_focus_entered"]
 
 [connection signal="pressed" from="RowOrganizer/ColumnOrganizer2/Select5" to="." method="_on_Select5_pressed"]
 

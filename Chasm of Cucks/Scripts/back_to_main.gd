@@ -16,6 +16,7 @@ func _process(delta):
 			print("Amrith Selected.")
 			$SelectSound.play()
 			$Profiles/Amrith.show()
+			$Profiles/Logicked.hide()
 			$Profiles/Skeptic.hide()
 			$Profiles/Chris.hide()
 			$Profiles/CHL.hide()
@@ -44,6 +45,7 @@ func _process(delta):
 			
 		elif (selected == "logicked"):
 			print("Logicked Selected.")
+			$Profiles/Logicked.show()
 			$Profiles/Amrith.hide()
 			$Profiles/Skeptic.hide()
 			$SelectSound.play()
