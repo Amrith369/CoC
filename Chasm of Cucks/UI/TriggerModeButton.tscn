@@ -9,7 +9,7 @@ _sections_unfolded = [ "Material", "Rect", "Theme", "custom_colors", "custom_fon
 
 [node name="1P" parent="." index="0"]
 
-text = "Triggered Mode"
+text = "Achievements"
 _sections_unfolded = [ "Rect", "custom_colors", "custom_constants" ]
 
 

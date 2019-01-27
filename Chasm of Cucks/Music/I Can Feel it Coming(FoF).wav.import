@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/I Can Feel it Coming(FoF).wav-f18fdc247442ed9b8f4570de4befdcea.sample"
+
+[deps]
+
+source_file="res://Music/I Can Feel it Coming(FoF).wav"
+source_md5="abb48624fcf3794ae1ea3e7db151bb76"
+
+dest_files=[ "res://.import/I Can Feel it Coming(FoF).wav-f18fdc247442ed9b8f4570de4befdcea.sample" ]
+dest_md5="55cd13212df5d6a9f775fd351145fffc"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

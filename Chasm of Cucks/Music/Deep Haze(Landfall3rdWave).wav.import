@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Deep Haze(Landfall3rdWave).wav-03b093937527fe009301ae9d50e0bb20.sample"
+
+[deps]
+
+source_file="res://Music/Deep Haze(Landfall3rdWave).wav"
+source_md5="ce4b3e77a20f47e96da40e02699ae6cd"
+
+dest_files=[ "res://.import/Deep Haze(Landfall3rdWave).wav-03b093937527fe009301ae9d50e0bb20.sample" ]
+dest_md5="cb11109f30514fedb6035a3fc0f2d5be"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

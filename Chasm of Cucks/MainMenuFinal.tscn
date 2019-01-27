@@ -105,7 +105,7 @@ grow = 1.0
 thickness = 4
 vertical = true
 
-[node name="Control" type="Control"]
+[node name="Control" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -264,10 +264,8 @@ scene_to_load = "res://UI/CrusadeSelection.tscn"
 margin_top = 128.0
 margin_right = 1160.0
 margin_bottom = 203.0
-focus_mode = 0
 custom_styles/focus = SubResource( 7 )
-disabled = true
-scene_to_load = "res://UI/TriggeredSelection.tscn"
+scene_to_load = "res://Achievements.tscn"
 
 [node name="SettingsButton" parent="Menu/CenterRow/Buttons" index="2" instance=ExtResource( 8 )]
 

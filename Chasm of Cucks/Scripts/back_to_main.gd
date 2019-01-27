@@ -20,20 +20,25 @@ func _process(delta):
 			$Profiles/Skeptic.hide()
 			$Profiles/Chris.hide()
 			$Profiles/CHL.hide()
+			$Profiles/Martymer.hide()
+			$Profiles/Sargon.hide()
+			$Profiles/Shoe.hide()
 			
 		elif (selected == "armoredSkeptic"):
 			print("Armored Skeptic Selected.")
 			$Profiles/Skeptic.show()
 			$Profiles/Amrith.hide()
 			$Profiles/Chris.hide()
+			$Profiles/Martymer.hide()
 			$SelectSound.play()
 			
 		elif (selected == "chrisRayGun"):
 			print("Chris Ray Gun Selected.")
 			$Profiles/Chris.show()
-#			$Profiles/Amrith.hide()
+			$Profiles/Sargon.hide()
 			$Profiles/Skeptic.hide()
 			$Profiles/CHL.hide()
+			$Profiles/Shoe.hide()
 			$SelectSound.play()
 			
 		elif (selected == "chl"):
@@ -41,6 +46,8 @@ func _process(delta):
 			$Profiles/CHL.show()
 			$Profiles/Amrith.hide()
 			$Profiles/Chris.hide()
+			$Profiles/Shoe.hide()
+			$Profiles/Sargon.hide()
 			$SelectSound.play()
 			
 		elif (selected == "logicked"):
@@ -48,21 +55,35 @@ func _process(delta):
 			$Profiles/Logicked.show()
 			$Profiles/Amrith.hide()
 			$Profiles/Skeptic.hide()
+			$Profiles/Martymer.hide()
 			$SelectSound.play()
 			
 		elif (selected == "martymer"):
 			print("Martymer81 Selected.")
+			$Profiles/Martymer.show()
+			$Profiles/Skeptic.hide()
+			$Profiles/Logicked.hide()
 			$Profiles/Amrith.hide()
+			$Profiles/Sargon.hide()
+			$Profiles/Shoe.hide()
 			$SelectSound.play()
 			
 		elif (selected == "sargon"):
 			print("Sargon Selected.")
-			$Profiles/Amrith.hide()
+			$Profiles/Sargon.show()
+			$Profiles/Martymer.hide()
+			$Profiles/Shoe.hide()
+			$Profiles/Chris.hide()
+			$Profiles/Skeptic.hide()
+			$Profiles/CHL.hide()
 			$SelectSound.play()
 			
 		elif (selected == "shoeOnHead"):
 			print("ShoeOnHead Selected.")
-			$Profiles/Amrith.hide()
+			$Profiles/Shoe.show()
+			$Profiles/Sargon.hide()
+			$Profiles/CHL.hide()
+			$Profiles/Chris.hide()
 			$SelectSound.play()
 			
 		else: pass
