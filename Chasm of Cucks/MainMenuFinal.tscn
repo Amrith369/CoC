@@ -105,13 +105,14 @@ grow = 1.0
 thickness = 4
 vertical = true
 
-[node name="Control" type="Control" index="0"]
+[node name="Control" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -136,6 +137,7 @@ margin_top = 60.0
 margin_right = -60.0
 margin_bottom = -60.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -153,6 +155,7 @@ margin_top = 215.0
 margin_right = 1160.0
 margin_bottom = 263.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -177,6 +180,7 @@ margin_top = 267.0
 margin_right = 1160.0
 margin_bottom = 339.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -199,6 +203,7 @@ margin_top = 343.0
 margin_right = 1160.0
 margin_bottom = 384.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
@@ -227,6 +232,7 @@ margin_top = 173.0
 margin_right = 1160.0
 margin_bottom = 600.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -243,6 +249,7 @@ anchor_bottom = 0.0
 margin_right = 1160.0
 margin_bottom = 427.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
@@ -256,6 +263,7 @@ _sections_unfolded = [ "Size Flags", "custom_constants" ]
 margin_top = 33.0
 margin_right = 1160.0
 margin_bottom = 108.0
+rect_clip_content = false
 custom_styles/focus = SubResource( 6 )
 scene_to_load = "res://UI/CrusadeSelection.tscn"
 
@@ -264,6 +272,7 @@ scene_to_load = "res://UI/CrusadeSelection.tscn"
 margin_top = 128.0
 margin_right = 1160.0
 margin_bottom = 203.0
+rect_clip_content = false
 custom_styles/focus = SubResource( 7 )
 scene_to_load = "res://Achievements.tscn"
 
@@ -272,6 +281,7 @@ scene_to_load = "res://Achievements.tscn"
 margin_top = 223.0
 margin_right = 1160.0
 margin_bottom = 298.0
+rect_clip_content = false
 custom_styles/focus = SubResource( 8 )
 scene_to_load = "res://UI/SettingsMenu.tscn"
 
@@ -280,12 +290,14 @@ scene_to_load = "res://UI/SettingsMenu.tscn"
 margin_top = 318.0
 margin_right = 1160.0
 margin_bottom = 393.0
+rect_clip_content = false
 custom_styles/focus = SubResource( 9 )
 scene_to_load = "res://Quit.tscn"
 
 [node name="FadeIn" parent="." index="2" instance=ExtResource( 10 )]
 
 visible = false
+rect_clip_content = false
 
 [node name="Particles2D" parent="." index="3" instance=ExtResource( 11 )]
 
@@ -295,6 +307,7 @@ position = Vector2( 630, 750 )
 
 stream = ExtResource( 12 )
 volume_db = -0.06
+pitch_scale = 1.0
 autoplay = true
 mix_target = 0
 bus = "Master"
@@ -303,6 +316,7 @@ bus = "Master"
 
 stream = ExtResource( 13 )
 volume_db = -0.2
+pitch_scale = 1.0
 autoplay = false
 mix_target = 0
 bus = "Master"
