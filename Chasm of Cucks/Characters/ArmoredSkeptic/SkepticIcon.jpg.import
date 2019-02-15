@@ -7,10 +7,7 @@ path="res://.import/SkepticIcon.jpg-79adbcda9a75b57be56db6b615c0b564.stex"
 [deps]
 
 source_file="res://Characters/ArmoredSkeptic/SkepticIcon.jpg"
-source_md5="fb53ea5543df9d03775457e08ad0dad2"
-
 dest_files=[ "res://.import/SkepticIcon.jpg-79adbcda9a75b57be56db6b615c0b564.stex" ]
-dest_md5="2a5eb2f148e633276f4368f323bcbb9c"
 
 [params]
 

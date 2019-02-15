@@ -7,10 +7,7 @@ path="res://.import/CI.png-ae26f95ae88cfb1c744f2b30967f2633.stex"
 [deps]
 
 source_file="res://Characters/Amrith/CI.png"
-source_md5="1e44c9a0b3d993acd897b1cc51106346"
-
 dest_files=[ "res://.import/CI.png-ae26f95ae88cfb1c744f2b30967f2633.stex" ]
-dest_md5="98f76967891483108262cb3558e46cb4"
 
 [params]
 

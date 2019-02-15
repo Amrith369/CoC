@@ -7,10 +7,7 @@ path="res://.import/Click.wav-5bf7e3c1c16a8aaea4e49af9fea196cc.sample"
 [deps]
 
 source_file="res://Sounds/Click.wav"
-source_md5="2f84b07f3749fc9f979341e30a2e61d4"
-
 dest_files=[ "res://.import/Click.wav-5bf7e3c1c16a8aaea4e49af9fea196cc.sample" ]
-dest_md5="9ad9c9b4399c1a7e85ea8a541263e8ab"
 
 [params]
 

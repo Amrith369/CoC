@@ -7,10 +7,7 @@ path="res://.import/LogickedIcon.jpg-4e196b629f1787743f44e5811762fb28.stex"
 [deps]
 
 source_file="res://Characters/Logicked/LogickedIcon.jpg"
-source_md5="e659e609429dde1715b94b2cdf7ce0c0"
-
 dest_files=[ "res://.import/LogickedIcon.jpg-4e196b629f1787743f44e5811762fb28.stex" ]
-dest_md5="96d9441186c4bb1444c05b4e7a9de80a"
 
 [params]
 

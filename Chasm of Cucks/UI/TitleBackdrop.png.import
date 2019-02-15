@@ -7,10 +7,7 @@ path="res://.import/TitleBackdrop.png-cc9158ac795bc3b21dcc7d927c5c20c1.stex"
 [deps]
 
 source_file="res://UI/TitleBackdrop.png"
-source_md5="15464b8d75f42e7e9de24556c4b85bcd"
-
 dest_files=[ "res://.import/TitleBackdrop.png-cc9158ac795bc3b21dcc7d927c5c20c1.stex" ]
-dest_md5="a4b14646c151ef2761161df66b858db6"
 
 [params]
 

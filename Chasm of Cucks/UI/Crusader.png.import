@@ -7,10 +7,7 @@ path="res://.import/Crusader.png-4be627ab2f6a572c73f309d5893afd3d.stex"
 [deps]
 
 source_file="res://UI/Crusader.png"
-source_md5="f5196be24164ad6be7d37e8f82f075b9"
-
 dest_files=[ "res://.import/Crusader.png-4be627ab2f6a572c73f309d5893afd3d.stex" ]
-dest_md5="4b9a82772b85fec249666a712333edfc"
 
 [params]
 

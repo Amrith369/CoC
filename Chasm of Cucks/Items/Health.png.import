@@ -7,10 +7,7 @@ path="res://.import/Health.png-39bd159fb9938fdefe220cda1e76dfe4.stex"
 [deps]
 
 source_file="res://Items/Health.png"
-source_md5="166b2c380d503fb6bd5aa006a2968d22"
-
 dest_files=[ "res://.import/Health.png-39bd159fb9938fdefe220cda1e76dfe4.stex" ]
-dest_md5="1508db761fb56cd780d893b46ef6b4d1"
 
 [params]
 

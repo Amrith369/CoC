@@ -7,10 +7,7 @@ path="res://.import/MarchOfSpoon(SelectScreen).wav-7e4961dfc449855039d5d048197e4
 [deps]
 
 source_file="res://Music/MarchOfSpoon(SelectScreen).wav"
-source_md5="5151e9c87f2e9a2ce666a9bdcd9bab9a"
-
 dest_files=[ "res://.import/MarchOfSpoon(SelectScreen).wav-7e4961dfc449855039d5d048197e4d74.sample" ]
-dest_md5="d96a5e6ece350e5c1d33d219398d7a33"
 
 [params]
 

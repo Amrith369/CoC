@@ -7,10 +7,7 @@ path="res://.import/MartyerProfile.png-09abc6f40fd41bc9d73a1bd38756f795.stex"
 [deps]
 
 source_file="res://Characters/Martymer/MartyerProfile.png"
-source_md5="fedc0e07dac48bdbfe71ca85d34b0ef2"
-
 dest_files=[ "res://.import/MartyerProfile.png-09abc6f40fd41bc9d73a1bd38756f795.stex" ]
-dest_md5="3db91e7386233535780f773d9c92c03f"
 
 [params]
 

@@ -7,10 +7,7 @@ path="res://.import/Ember.png-9a544aa5cc96437d07144d8f59457f7b.stex"
 [deps]
 
 source_file="res://Particles/Ember.png"
-source_md5="3dcd47c30db3c297cfe2c1a5debb11ad"
-
 dest_files=[ "res://.import/Ember.png-9a544aa5cc96437d07144d8f59457f7b.stex" ]
-dest_md5="58692d91bff6f4a074df103ca463d1dd"
 
 [params]
 

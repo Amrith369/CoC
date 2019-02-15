@@ -7,10 +7,7 @@ path="res://.import/CHLIcon.jpg-daf9b77fb3c04d650ba675d2b3c3ec9b.stex"
 [deps]
 
 source_file="res://Characters/CoolHardLogic/CHLIcon.jpg"
-source_md5="b3932bf62c111331eb2ac80b58191d83"
-
 dest_files=[ "res://.import/CHLIcon.jpg-daf9b77fb3c04d650ba675d2b3c3ec9b.stex" ]
-dest_md5="7546bafc20e2aac6cf1febab2e3526d8"
 
 [params]
 

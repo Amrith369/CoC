@@ -7,10 +7,7 @@ path="res://.import/SargonIcon.jpg-6f737c0d33ede37e051020f213c89bf0.stex"
 [deps]
 
 source_file="res://Characters/Sargon/SargonIcon.jpg"
-source_md5="dbb40f6896a4fc31c6ed4a563977c0bb"
-
 dest_files=[ "res://.import/SargonIcon.jpg-6f737c0d33ede37e051020f213c89bf0.stex" ]
-dest_md5="d2bcab64306b2c361bb87ae602d31c7e"
 
 [params]
 

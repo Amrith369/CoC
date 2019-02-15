@@ -7,10 +7,7 @@ path="res://.import/I Can Feel it Coming(FoF).wav-f18fdc247442ed9b8f4570de4befdc
 [deps]
 
 source_file="res://Music/I Can Feel it Coming(FoF).wav"
-source_md5="abb48624fcf3794ae1ea3e7db151bb76"
-
 dest_files=[ "res://.import/I Can Feel it Coming(FoF).wav-f18fdc247442ed9b8f4570de4befdcea.sample" ]
-dest_md5="55cd13212df5d6a9f775fd351145fffc"
 
 [params]
 

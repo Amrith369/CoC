@@ -7,10 +7,7 @@ path="res://.import/Babylon(WooCrystalCavern).wav-95b224cfd85e85f94b966817850d87
 [deps]
 
 source_file="res://Music/Babylon(WooCrystalCavern).wav"
-source_md5="351320467e6de5805e640288507a8a82"
-
 dest_files=[ "res://.import/Babylon(WooCrystalCavern).wav-95b224cfd85e85f94b966817850d8760.sample" ]
-dest_md5="0cb52d698732dfe0ed9d047d9db83af5"
 
 [params]
 

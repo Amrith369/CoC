@@ -7,10 +7,7 @@ path="res://.import/Ouroboros (Cuckopolis).wav-601e63514a67ce65ded124ca697a80b6.
 [deps]
 
 source_file="res://Music/Ouroboros (Cuckopolis).wav"
-source_md5="15f692080dd3d7087f5ce5b27b4b5f33"
-
 dest_files=[ "res://.import/Ouroboros (Cuckopolis).wav-601e63514a67ce65ded124ca697a80b6.sample" ]
-dest_md5="313f37ca1f12501ecb2dbdd051b97427"
 
 [params]
 

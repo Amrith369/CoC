@@ -18,6 +18,10 @@ config/icon="res://Characters/Amrith/CI.png"
 
 global="*res://global.gd"
 
+[debug]
+
+settings/stdout/print_fps=true
+
 [display]
 
 window/size/width=1280

@@ -7,10 +7,7 @@ path="res://.import/ChrisProfile.png-99e3c4e12676221b13b8bf1d9a562063.stex"
 [deps]
 
 source_file="res://Characters/ChrisRayGun/ChrisProfile.png"
-source_md5="2d56f24c41e584a9d18846e01478deda"
-
 dest_files=[ "res://.import/ChrisProfile.png-99e3c4e12676221b13b8bf1d9a562063.stex" ]
-dest_md5="da63e9cf7ceedcbdac73efc6d12ac9a2"
 
 [params]
 

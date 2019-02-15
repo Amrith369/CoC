@@ -7,10 +7,7 @@ path="res://.import/ShoeProfile.png-90dbf8d051a7793179a4a4777f6b4c22.stex"
 [deps]
 
 source_file="res://Characters/ShoeOnHead/ShoeProfile.png"
-source_md5="24b7ae7eeb3fa932e25f598cca5af349"
-
 dest_files=[ "res://.import/ShoeProfile.png-90dbf8d051a7793179a4a4777f6b4c22.stex" ]
-dest_md5="2d556eb65070f2cf8a7131bea0b1e829"
 
 [params]
 
