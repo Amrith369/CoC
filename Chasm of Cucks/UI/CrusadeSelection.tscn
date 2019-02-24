@@ -139,13 +139,14 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="CrusadeSelection" type="Control" index="0"]
+[node name="CrusadeSelection" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -163,6 +164,7 @@ margin_top = 50.0
 margin_right = 183.0
 margin_bottom = 98.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -185,6 +187,7 @@ margin_left = 120.0
 margin_top = 170.0
 margin_right = 120.0
 margin_bottom = 170.0
+rect_clip_content = false
 
 [node name="BackToMain" type="Button" parent="." index="2"]
 
@@ -197,6 +200,7 @@ margin_top = 650.0
 margin_right = 90.0
 margin_bottom = 691.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
@@ -223,6 +227,7 @@ margin_top = 101.0
 margin_right = 231.0
 margin_bottom = 136.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -238,6 +243,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 stream = ExtResource( 6 )
 volume_db = -0.06
+pitch_scale = 1.0
 autoplay = true
 mix_target = 0
 bus = "Master"
@@ -255,6 +261,7 @@ margin_top = 170.0
 margin_right = 640.0
 margin_bottom = 570.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -282,6 +289,7 @@ margin_left = -268.5
 margin_right = 268.5
 margin_bottom = 43.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
@@ -306,6 +314,7 @@ margin_top = 100.0
 margin_right = 69.0
 margin_bottom = 169.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
@@ -334,6 +343,7 @@ margin_top = 190.0
 margin_right = 69.0
 margin_bottom = 259.0
 rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
 mouse_default_cursor_shape = 0
@@ -369,11 +379,13 @@ anchor_bottom = 0.0
 margin_left = -640.0
 margin_right = 640.0
 margin_bottom = 720.0
+rect_clip_content = false
 
 [node name="SelectSound" type="AudioStreamPlayer" parent="." index="8"]
 
 stream = ExtResource( 10 )
 volume_db = -1.0
+pitch_scale = 1.0
 autoplay = false
 mix_target = 0
 bus = "Master"

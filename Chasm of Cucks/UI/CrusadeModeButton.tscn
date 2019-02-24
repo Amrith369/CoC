@@ -5,10 +5,12 @@
 [node name="CrusadeModeButton" instance=ExtResource( 1 )]
 
 rect_min_size = Vector2( 360, 60 )
+rect_clip_content = false
 _sections_unfolded = [ "Material", "Rect", "Theme", "custom_colors", "custom_fonts", "custom_styles" ]
 
 [node name="1P" parent="." index="0"]
 
+rect_clip_content = false
 text = "Crusade Mode"
 
 

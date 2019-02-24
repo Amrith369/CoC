@@ -1,12 +1,18 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/Achievements.gd" type="Script" id=1]
 [ext_resource path="res://Particles/TitleEmbers.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Fonts/DWARVESC.TTF" type="DynamicFontData" id=3]
-[ext_resource path="res://UI/Medal.png" type="Texture" id=4]
-[ext_resource path="res://UI/_.png" type="Texture" id=5]
-[ext_resource path="res://Fonts/OpenSans-Bold.ttf" type="DynamicFontData" id=6]
-[ext_resource path="res://Fonts/OpenSans-Regular.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://UI/LeftArrowNormal.png" type="Texture" id=4]
+[ext_resource path="res://UI/LeftArrowDisabled.png" type="Texture" id=5]
+[ext_resource path="res://UI/LeftArrowHighlighted.png" type="Texture" id=6]
+[ext_resource path="res://UI/RightArrowNormal.png" type="Texture" id=7]
+[ext_resource path="res://UI/RightArrowDisabled.png" type="Texture" id=8]
+[ext_resource path="res://UI/RightArrowHighlighted.png" type="Texture" id=9]
+[ext_resource path="res://UI/Medal.png" type="Texture" id=10]
+[ext_resource path="res://UI/_.png" type="Texture" id=11]
+[ext_resource path="res://Fonts/OpenSans-Bold.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://Fonts/OpenSans-Regular.ttf" type="DynamicFontData" id=13]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -21,7 +27,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 size = 25
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 6 )
+font_data = ExtResource( 12 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=3]
@@ -29,7 +35,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 size = 18
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 7 )
+font_data = ExtResource( 13 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=4]
@@ -37,7 +43,7 @@ _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 size = 20
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 6 )
+font_data = ExtResource( 12 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="Achievements" type="Control" index="0"]
@@ -103,10 +109,10 @@ anchor_left = 0.0
 anchor_top = 0.5
 anchor_right = 0.0
 anchor_bottom = 0.5
-margin_top = -34.0
-margin_right = 128.0
-margin_bottom = 94.0
-rect_scale = Vector2( 0.5, 0.5 )
+margin_left = -30.0
+margin_top = -64.0
+margin_right = 98.0
+margin_bottom = 64.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -121,6 +127,8 @@ shortcut = null
 group = null
 texture_normal = ExtResource( 4 )
 texture_disabled = ExtResource( 5 )
+texture_focused = ExtResource( 6 )
+expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="RightScroll" type="TextureButton" parent="Menu/Label" index="1"]
@@ -129,11 +137,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = -58.0
-margin_top = -34.0
-margin_right = 70.0
-margin_bottom = 94.0
-rect_scale = Vector2( 0.5, 0.5 )
+margin_left = -88.0
+margin_top = -64.0
+margin_right = 40.0
+margin_bottom = 64.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -145,8 +152,10 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 4 )
-texture_disabled = ExtResource( 5 )
+texture_normal = ExtResource( 7 )
+texture_disabled = ExtResource( 8 )
+texture_focused = ExtResource( 9 )
+expand = true
 _sections_unfolded = [ "Rect", "Textures" ]
 
 [node name="MedalSection1" type="HBoxContainer" parent="Menu" index="1"]
@@ -158,7 +167,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 80.0
 margin_right = 1040.0
-margin_bottom = 736.0
+margin_bottom = 560.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -175,7 +184,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 257.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -193,14 +202,14 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 257.0
-margin_bottom = 326.0
+margin_bottom = 238.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer/Medal5" index="0"]
@@ -219,7 +228,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer/Medal5/TextureRect" index="0"]
@@ -278,16 +287,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 330.0
+margin_top = 242.0
 margin_right = 257.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer/Medal6" index="0"]
@@ -306,7 +315,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer/Medal6/TextureRect" index="0"]
@@ -367,7 +376,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 261.0
 margin_right = 518.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -384,14 +393,14 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 257.0
-margin_bottom = 326.0
+margin_bottom = 238.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer2/Medal2" index="0"]
@@ -410,7 +419,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer2/Medal2/TextureRect" index="0"]
@@ -468,16 +477,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 330.0
+margin_top = 242.0
 margin_right = 257.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer2/Medal6" index="0"]
@@ -496,7 +505,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer2/Medal6/TextureRect" index="0"]
@@ -558,7 +567,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 522.0
 margin_right = 779.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -575,14 +584,14 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 257.0
-margin_bottom = 326.0
+margin_bottom = 238.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer3/Medal3" index="0"]
@@ -601,7 +610,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer3/Medal3/TextureRect" index="0"]
@@ -659,16 +668,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 330.0
+margin_top = 242.0
 margin_right = 257.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer3/Medal7" index="0"]
@@ -687,7 +696,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer3/Medal7/TextureRect" index="0"]
@@ -748,7 +757,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 783.0
 margin_right = 1040.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -765,14 +774,14 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 257.0
-margin_bottom = 326.0
+margin_bottom = 238.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer4/Medal4" index="0"]
@@ -791,7 +800,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer4/Medal4/TextureRect" index="0"]
@@ -850,16 +859,16 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 330.0
+margin_top = 242.0
 margin_right = 257.0
-margin_bottom = 656.0
+margin_bottom = 480.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection1/VBoxContainer4/Medal8" index="0"]
@@ -878,7 +887,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection1/VBoxContainer4/Medal8/TextureRect" index="0"]
@@ -982,7 +991,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer/Medal1" index="0"]
@@ -1001,7 +1010,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer/Medal1/TextureRect" index="0"]
@@ -1069,7 +1078,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer/Medal5" index="0"]
@@ -1088,7 +1097,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer/Medal5/TextureRect" index="0"]
@@ -1173,7 +1182,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer2/Medal2" index="0"]
@@ -1192,7 +1201,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer2/Medal2/TextureRect" index="0"]
@@ -1260,7 +1269,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer2/Medal6" index="0"]
@@ -1279,7 +1288,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer2/Medal6/TextureRect" index="0"]
@@ -1366,7 +1375,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer3/Medal3" index="0"]
@@ -1385,7 +1394,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer3/Medal3/TextureRect" index="0"]
@@ -1452,7 +1461,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer3/Medal7" index="0"]
@@ -1471,7 +1480,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer3/Medal7/TextureRect" index="0"]
@@ -1556,7 +1565,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer4/Medal4" index="0"]
@@ -1575,7 +1584,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer4/Medal4/TextureRect" index="0"]
@@ -1643,7 +1652,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection2/VBoxContainer4/Medal8" index="0"]
@@ -1662,7 +1671,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection2/VBoxContainer4/Medal8/TextureRect" index="0"]
@@ -1766,7 +1775,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer/Medal1" index="0"]
@@ -1785,7 +1794,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer/Medal1/TextureRect" index="0"]
@@ -1852,7 +1861,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer/Medal5" index="0"]
@@ -1871,7 +1880,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer/Medal5/TextureRect" index="0"]
@@ -1956,7 +1965,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer2/Medal2" index="0"]
@@ -1975,7 +1984,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer2/Medal2/TextureRect" index="0"]
@@ -2043,7 +2052,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer2/Medal6" index="0"]
@@ -2063,7 +2072,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer2/Medal6/TextureRect" index="0"]
@@ -2176,7 +2185,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer3/Medal3" index="0"]
@@ -2195,7 +2204,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer3/Medal3/TextureRect" index="0"]
@@ -2263,7 +2272,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer3/Medal7" index="0"]
@@ -2283,7 +2292,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer3/Medal7/TextureRect" index="0"]
@@ -2370,7 +2379,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer4/Medal4" index="0"]
@@ -2389,7 +2398,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer4/Medal4/TextureRect" index="0"]
@@ -2459,7 +2468,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
 stretch_mode = 4
 
 [node name="TextureRect" type="TextureRect" parent="Menu/MedalSection3/VBoxContainer4/Medal8" index="0"]
@@ -2479,7 +2488,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 5 )
+texture = ExtResource( 11 )
 stretch_mode = 4
 
 [node name="Label" type="Label" parent="Menu/MedalSection3/VBoxContainer4/Medal8/TextureRect" index="0"]
@@ -2535,13 +2544,13 @@ flat = true
 align = 1
 _sections_unfolded = [ "custom_fonts" ]
 
-[connection signal="pressed" from="Menu/Label/LeftScroll" to="." method="_on_LeftScroll_pressed"]
-
 [connection signal="pressed" from="Menu/Label/LeftScroll" to="." method="_on_TextureButton_pressed"]
 
-[connection signal="pressed" from="Menu/Label/RightScroll" to="." method="_on_RightScroll_pressed"]
+[connection signal="pressed" from="Menu/Label/LeftScroll" to="." method="_on_LeftScroll_pressed"]
 
 [connection signal="pressed" from="Menu/Label/RightScroll" to="." method="_on_TextureButton2_pressed"]
+
+[connection signal="pressed" from="Menu/Label/RightScroll" to="." method="_on_RightScroll_pressed"]
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 
