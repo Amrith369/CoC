@@ -8,8 +8,8 @@
 [ext_resource path="res://Music/MarchOfSpoon(SelectScreen).wav" type="AudioStream" id=6]
 [ext_resource path="res://UI/Crusader.png" type="Texture" id=7]
 [ext_resource path="res://Fonts/OpenSans-Bold.ttf" type="DynamicFontData" id=8]
-[ext_resource path="res://UI/DONOTUSE.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Sounds/Click.wav" type="AudioStream" id=10]
+[ext_resource path="res://Sounds/Click.wav" type="AudioStream" id=9]
+[ext_resource path="res://UI/DONOTUSE.tscn" type="PackedScene" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -139,8 +139,9 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="CrusadeSelection" type="Control"]
+[node name="CrusadeSelection" type="Control" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -187,7 +188,6 @@ margin_left = 120.0
 margin_top = 170.0
 margin_right = 120.0
 margin_bottom = 170.0
-rect_clip_content = false
 
 [node name="BackToMain" type="Button" parent="." index="2"]
 
@@ -242,7 +242,7 @@ _sections_unfolded = [ "custom_fonts" ]
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="4"]
 
 stream = ExtResource( 6 )
-volume_db = -0.06
+volume_db = -9.0
 pitch_scale = 1.0
 autoplay = true
 mix_target = 0
@@ -267,7 +267,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0.0664062, 0.000259399, 0.0436683, 0 )
-_sections_unfolded = [ "Rect" ]
+_sections_unfolded = [ "Rect", "Visibility" ]
 
 [node name="Sprite" type="Sprite" parent="ColorRect" index="0"]
 
@@ -371,7 +371,16 @@ anims/confirm_fade = SubResource( 8 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
-[node name="Profiles" parent="." index="7" instance=ExtResource( 9 )]
+[node name="SelectSound" type="AudioStreamPlayer" parent="." index="7"]
+
+stream = ExtResource( 9 )
+volume_db = -9.0
+pitch_scale = 1.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Profiles" parent="." index="8" instance=ExtResource( 10 )]
 
 anchor_left = 0.5
 anchor_right = 0.5
@@ -379,16 +388,6 @@ anchor_bottom = 0.0
 margin_left = -640.0
 margin_right = 640.0
 margin_bottom = 720.0
-rect_clip_content = false
-
-[node name="SelectSound" type="AudioStreamPlayer" parent="." index="8"]
-
-stream = ExtResource( 10 )
-volume_db = -1.0
-pitch_scale = 1.0
-autoplay = false
-mix_target = 0
-bus = "Master"
 
 [connection signal="focus_entered" from="PlayerSelectRows" to="." method="_on_PlayerSelectRows_focus_entered"]
 
